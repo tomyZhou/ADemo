@@ -24,20 +24,20 @@ public class MyLayout extends RelativeLayout {
     @Override
     public boolean dispatchTouchEvent(MotionEvent ev) {
         show("dispatchTouchEvent", ev);
-        //switch
+//        return false;
         return super.dispatchTouchEvent(ev);
     }
 
     @Override
     public boolean onTouchEvent(MotionEvent event) {
         show("onTouchEvent", event);
-        //switch
 //        Log.e(TAG,super.onTouchEvent(event)+"");
         return super.onTouchEvent(event);
     }
 
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
+//        return true;
         return super.onInterceptTouchEvent(ev);
     }
 

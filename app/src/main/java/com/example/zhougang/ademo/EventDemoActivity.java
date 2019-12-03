@@ -38,7 +38,8 @@ public class EventDemoActivity extends AppCompatActivity implements View.OnClick
     public boolean dispatchTouchEvent(MotionEvent ev) {
 
         Log.e(TAG, "EventDemoActivity dispatchTouchEvent");
-        return super.dispatchTouchEvent(ev);
+        return false;
+//        return super.dispatchTouchEvent(ev);
     }
 
     @Override
