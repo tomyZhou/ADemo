@@ -4,7 +4,7 @@ Android相关知识示例：
 
 2.Android事件传递机制理解示例
 
-![事件分发图解](https://github.com/tomyZhou/ADemo/blob/master/mm.jpg)
+![事件分发图解](https://github.com/tomyZhou/ADemo/blob/master/20190117093542751.png)
 
 
 
@@ -31,31 +31,3 @@ dispatchTouchEvent方法是负责决定是否向下分发事件，由上往下�
              true：表示当前控件要拦截事件，紧接着事件交给当前控件的onTouchEvent方法来处理。
 
             super/false：不拦截事件，事件最终继续往下分发。
-
-另外还要交待的情况：
-
-   有点击事件的View默认的super.ontouchEvent(event) 其实返回的是true
-   没有点击事件的ViewGroup的super.onTouchEvent(event)其实返回的是false
-   
-下面就是将View 的onTouchEvent返回false,ViewGroup的onTouchEvent使用super.onTouchEvent(event)时的打印结果：
-
-2019-12-03 14:40:53.884 17591-17591/  E/EventDemoActivity: EventDemoActivity dispatchTouchEvent
-
-2019-12-03 14:40:53.885 17591-17591/  E/MyLayout: dispatchTouchEvent: ACTION_DOWN
-
-2019-12-03 14:40:53.885 17591-17591/  E/MyButton: MyButton dispatchTouchEvent
-
-2019-12-03 14:40:53.885 17591-17591/  E/MyButton: MyButton onTouchEvent
-
-2019-12-03 14:40:53.886 17591-17591/  E/MyButton: true
-
-2019-12-03 14:40:53.886 17591-17591/  E/MyButton: super.onTouchEvent(event)=true
-
-2019-12-03 14:40:53.886 17591-17591/  E/MyButton: 设置成 false
-
-2019-12-03 14:40:53.886 17591-17591/  E/MyLayout: onTouchEvent: ACTION_DOWN
-
-2019-12-03 14:40:53.886 17591-17591/  E/MyLayout: super.onTouchEvent(event)=false
-
-2019-12-03 14:40:53.886 17591-17591/  E/EventDemoActivity: EventDemoActivity onTouchevent
-   
