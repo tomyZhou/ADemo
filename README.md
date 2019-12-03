@@ -4,7 +4,7 @@ Android相关知识示例：
 
 2.Android事件传递机制理解示例
 
-![事件分发图解](https://github.com/tomyZhou/ADemo/blob/master/20190117093542751.png)
+![事件分发图解](https://github.com/tomyZhou/ADemo/blob/master/mm.jpg)
 
 
 
