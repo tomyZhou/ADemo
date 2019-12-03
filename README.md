@@ -1,8 +1,10 @@
-Android相关知识示例
+Android相关知识示例：
 
 1.对Handler理解示例。写一个小例子实现handler的功能，子线程发消息通知UI线程更新UI。
 
 2.Android事件传递机制理解示例
+
+![事件分发图解](https://github.com/tomyZhou/ADemo/blob/master/20190117093542751.png)
 
 
 
