@@ -57,5 +57,5 @@ dispatchTouchEvent方法是负责决定是否向下分发事件，由上往下�
 
 2019-12-03 14:40:53.886 17591-17591/  E/MyLayout: super.onTouchEvent(event)=false
 
-2019-12-03 14:40:53.886 17591-17591/com.example.zhougang.ademo E/EventDemoActivity: EventDemoActivity onTouchevent
+2019-12-03 14:40:53.886 17591-17591/  E/EventDemoActivity: EventDemoActivity onTouchevent
    
