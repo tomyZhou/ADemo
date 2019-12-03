@@ -40,13 +40,22 @@ dispatchTouchEvent方法是负责决定是否向下分发事件，由上往下�
 下面就是将View 的onTouchEvent返回false,ViewGroup的onTouchEvent使用super.onTouchEvent(event)时的打印结果：
 
 2019-12-03 14:40:53.884 17591-17591/  E/EventDemoActivity: EventDemoActivity dispatchTouchEvent
+
 2019-12-03 14:40:53.885 17591-17591/  E/MyLayout: dispatchTouchEvent: ACTION_DOWN
+
 2019-12-03 14:40:53.885 17591-17591/  E/MyButton: MyButton dispatchTouchEvent
+
 2019-12-03 14:40:53.885 17591-17591/  E/MyButton: MyButton onTouchEvent
+
 2019-12-03 14:40:53.886 17591-17591/  E/MyButton: true
+
 2019-12-03 14:40:53.886 17591-17591/  E/MyButton: super.onTouchEvent(event)=true
+
 2019-12-03 14:40:53.886 17591-17591/  E/MyButton: 设置成 false
+
 2019-12-03 14:40:53.886 17591-17591/  E/MyLayout: onTouchEvent: ACTION_DOWN
+
 2019-12-03 14:40:53.886 17591-17591/  E/MyLayout: super.onTouchEvent(event)=false
+
 2019-12-03 14:40:53.886 17591-17591/com.example.zhougang.ademo E/EventDemoActivity: EventDemoActivity onTouchevent
    
